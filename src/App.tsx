@@ -1,10 +1,10 @@
-import { FC } from "react";
-import styled from "styled-components";
+import { FC } from 'react';
+import styled from 'styled-components';
 
 const App: FC = () => {
     return (
         <Wrapper>
-            <h1>Clean Up</h1>
+            <h1 className="mt-5 text-danger">Clean Up</h1>
         </Wrapper>
     );
 };
