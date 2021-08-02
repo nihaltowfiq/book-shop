@@ -1,17 +1,14 @@
 import { FC } from 'react';
-import styled from 'styled-components';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import { Home } from './pages';
 
 const App: FC = () => {
     return (
-        <Wrapper>
-            <h1 className="mt-5 text-danger">Clean Up</h1>
-        </Wrapper>
+        <Switch>
+            <Redirect from="/home" to="/" />
+            <Route exact path="/" component={Home} />
+        </Switch>
     );
 };
 
 export default App;
-
-const Wrapper = styled.div`
-    margin: auto;
-    text-align: center;
-`;

@@ -1,6 +1,10 @@
 {
-    "name": "book-shop",
+    "name": "book-shop-client",
     "version": "0.1.0",
+    "author": {
+        "name": "Nihal Towfiq",
+        "email": "nihal.towfiq@gmail.com"
+    },
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.4",
