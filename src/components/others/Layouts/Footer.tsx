@@ -5,7 +5,7 @@ export const Footer: FC<PropsType> = ({ show }) => {
     if (show) {
         return (
             <Wrapper>
-                <p>
+                <p className="mb-0">
                     &copy; all rights reserved by{' '}
                     <a
                         href="https://github.com/nihaltowfiq"

@@ -14,7 +14,7 @@ export const Header: FC<PropsType> = ({ isNav }) => {
                 {isNav && (
                     <Navigation>
                         <li>
-                            <NavLink to="/" activeClassName="active">
+                            <NavLink exact to="/" activeClassName="active">
                                 Home
                             </NavLink>
                         </li>
