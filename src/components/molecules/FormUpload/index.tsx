@@ -15,7 +15,7 @@ export const FormUpload: FC<FormUploadProps> = (props) => {
 	const imageRef = useRef<HTMLInputElement>(null);
 
 	return (
-		<FormGroup {...groupProps} onClick={() => imageRef.current!.click()}>
+		<FormGroup {...groupProps} onClick={() => imageRef.current.click()}>
 			<FormLabel {...labelProps} />
 			<DropImage isInvalid={!!(required && message)}>
 				<Icon path={imageAdd} width={32} height={32} />

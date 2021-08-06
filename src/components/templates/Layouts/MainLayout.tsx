@@ -2,7 +2,7 @@ import { FC, Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import { Footer, Header } from '../../organisms';
 
-export const MainLayout: FC<PropsType> = ({ isNav = true, isFooter = true, children }) => {
+export const MainLayout: FC<PropsType> = ({ isNav, isFooter, children }) => {
 	return (
 		<Fragment>
 			<header>
@@ -20,3 +20,8 @@ interface PropsType {
 	isNav?: boolean;
 	isFooter?: boolean;
 }
+
+MainLayout.defaultProps = {
+	isNav: true,
+	isFooter: true,
+};
