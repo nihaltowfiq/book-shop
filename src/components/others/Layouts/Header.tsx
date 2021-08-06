@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Header: FC<PropsType> = ({ isNav }) => {
@@ -8,7 +8,12 @@ export const Header: FC<PropsType> = ({ isNav }) => {
         <Container>
             <NavBar>
                 <div className="Logo">
-                    <h4 className="mb-0 font-weight-bold">BOOK SHOP</h4>
+                    <Link
+                        to="/"
+                        style={{ color: 'var(--dark)', textDecoration: 'none' }}
+                    >
+                        <h4 className="mb-0 font-weight-bold">BOOK SHOP</h4>
+                    </Link>
                 </div>
 
                 {isNav && (
