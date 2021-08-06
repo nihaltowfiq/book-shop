@@ -1,5 +1,6 @@
 import { FC } from 'react';
+import { MainLayout } from '../components/others';
 
 export const Home: FC = () => {
-    return <div>Something</div>;
+    return <MainLayout>Something</MainLayout>;
 };
