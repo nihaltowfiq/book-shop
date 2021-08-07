@@ -48,7 +48,7 @@ export const FormControl = styled.input<FormControlProps>`
 	width: 100%;
 	display: block;
 	padding: 0.532rem 1rem;
-	border: 1px solid var(--border);
+	border: 1px solid var(--light);
 	${({ pill }) => {
 		if (pill) {
 			return css`
@@ -65,7 +65,7 @@ export const FormControl = styled.input<FormControlProps>`
 	&:focus {
 		outline: none;
 		border-color: var(--primary);
-		box-shadow: 0 0 0 0.2rem rgba(0, 181, 91, 0.25);
+		box-shadow: 0 0 0 0.2rem rgba(105, 70, 244, 0.25);
 	}
 
 	&:disabled {
