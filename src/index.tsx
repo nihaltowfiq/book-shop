@@ -1,11 +1,14 @@
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import './index.scss';
+import AuthCtxProvider from './store';
 
 ReactDOM.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>,
+	<AuthCtxProvider>
+		<Router>
+			<App />
+		</Router>
+	</AuthCtxProvider>,
 	document.getElementById('root'),
 );
