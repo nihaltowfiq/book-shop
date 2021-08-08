@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { Home, NotFound } from './pages';
+import { Home, NotFound } from './components/templates';
 
 const App: FC = () => {
 	return (

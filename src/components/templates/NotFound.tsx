@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import { MainLayout } from '../components/templates';
-
+import { MainLayout } from './Layouts';
 export const NotFound: FC = () => {
 	return (
 		<MainLayout>
