@@ -1,6 +1,6 @@
+import { Button, FormInput } from 'components/atoms';
+import { SearchField } from 'components/molecules';
 import { FC } from 'react';
-import { Button, FormInput } from '../atoms';
-import { SearchField } from '../molecules';
 import { MainLayout } from './Layouts';
 
 export const Home: FC = () => {
