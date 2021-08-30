@@ -8,7 +8,7 @@ import { FormGroup } from '../atoms/FormInput/styles';
 export const SearchField: FC<SearchFieldProps> = ({ className, onClick, ...rest }) => {
 	return (
 		<InputGroupWrapper className={className}>
-			<Icon path={search} fill="#757575" width={26} height={26} />
+			<Icon path={search} fill="#A9A9A9" width={26} height={26} />
 			<FormInput srOnly {...rest} />
 			<Button onClick={onClick}>Search</Button>
 		</InputGroupWrapper>
@@ -28,12 +28,16 @@ const InputGroupWrapper = styled.div`
 		margin-bottom: 0;
 
 		input {
-			padding: 1rem;
+			padding: 0.875rem;
 			background-color: var(--light);
-			padding-left: 2.6rem;
+			padding-left: 3rem;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			font-size: 1.25rem;
+
+			&::placeholder {
+				color: #a9a9a9;
+			}
 		}
 	}
 
@@ -42,12 +46,12 @@ const InputGroupWrapper = styled.div`
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 		border-left: none;
-		padding: 1rem;
+		padding: 0.875rem;
 	}
 
 	svg {
 		position: absolute;
-		top: 19px;
-		left: 10px;
+		top: 17px;
+		left: 15px;
 	}
 `;

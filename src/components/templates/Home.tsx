@@ -1,18 +1,15 @@
-import { Button, FormInput } from 'components/atoms';
 import { SearchField } from 'components/molecules';
+import { Books } from 'components/organisms';
 import { FC } from 'react';
 import { MainLayout } from './Layouts';
 
 export const Home: FC = () => {
 	return (
 		<MainLayout>
-			<Button>Something</Button>
-
-			<br />
-
-			<FormInput srOnly placeholder="Form Input" />
-
-			<SearchField placeholder="Search Book" />
+			<div style={{ width: '35rem', margin: '3.5rem auto' }}>
+				<SearchField placeholder="Search Book" />
+			</div>
+			<Books />
 		</MainLayout>
 	);
 };

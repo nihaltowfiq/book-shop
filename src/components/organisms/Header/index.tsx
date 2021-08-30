@@ -9,7 +9,7 @@ export const Header: FC<PropsType> = ({ isNav }) => {
 			<NavBar>
 				<div className="Logo">
 					<Link to="/" style={{ color: 'var(--dark)', textDecoration: 'none' }}>
-						<h4 className="mb-0 font-weight-bold">BOOK SHOP</h4>
+						<h4 className="mb-0 Web_Logo">BOOK SHOP</h4>
 					</Link>
 				</div>
 
