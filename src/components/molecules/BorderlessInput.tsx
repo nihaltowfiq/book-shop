@@ -8,7 +8,7 @@ export const BorderlessInput: FC<FormInputProps> = ({ ...rest }) => {
 
 const BorderlessInputWrapper = styled(FormInput)<FormInputProps>`
 	${FormControl} {
-		padding: 0;
+		padding: 0.25rem;
 		border-top: none;
 		border-left: none;
 		border-right: none;

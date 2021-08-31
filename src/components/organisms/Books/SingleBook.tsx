@@ -29,7 +29,7 @@ const Wrapper = styled(Card)`
 	box-shadow: 0 0 10px #f1f1f1;
 
 	h5 {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		font-weight: 700;
 		margin-bottom: 0.25rem;
 	}

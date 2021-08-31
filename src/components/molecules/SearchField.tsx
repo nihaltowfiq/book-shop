@@ -1,9 +1,7 @@
+import { Button, ButtonProps, ButtonWrapper, FormGroup, FormInput, FormInputProps } from 'components/atoms';
+import Icon, { search } from 'libs/icons';
 import { FC } from 'react';
 import styled from 'styled-components';
-import Icon, { search } from '../../libs/icons';
-import { Button, ButtonProps, FormInput, FormInputProps } from '../atoms';
-import { ButtonWrapper } from '../atoms/Button/styles';
-import { FormGroup } from '../atoms/FormInput/styles';
 
 export const SearchField: FC<SearchFieldProps> = ({ className, onClick, ...rest }) => {
 	return (

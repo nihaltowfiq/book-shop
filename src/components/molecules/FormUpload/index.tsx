@@ -1,6 +1,6 @@
+import { FormInputProps } from 'components/atoms';
+import Icon, { imageAdd } from 'libs/icons';
 import { FC, useRef } from 'react';
-import Icon, { imageAdd } from '../../../libs/icons';
-import { FormInputProps } from '../../atoms';
 import { DropImage, FormControl, FormFeedback, FormGroup, FormLabel } from './styles';
 
 export const FormUpload: FC<FormUploadProps> = (props) => {

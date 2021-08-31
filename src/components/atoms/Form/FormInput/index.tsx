@@ -1,5 +1,5 @@
 import { ElementType, FC, InputHTMLAttributes, TextareaHTMLAttributes } from 'react';
-import { ElementBorders } from '../interfaces';
+import { ElementBorders } from '../../interfaces';
 import { FormControl, FormFeedback, FormGroup, FormLabel } from './styles';
 
 export const FormInput: FC<FormInputProps> = (props) => {
@@ -35,4 +35,4 @@ FormInput.defaultProps = {
 	srOnly: false,
 };
 
-export { FormControl };
+export { FormGroup, FormControl };

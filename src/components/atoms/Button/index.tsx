@@ -16,3 +16,5 @@ Button.defaultProps = {
 	pill: false,
 	block: false,
 };
+
+export { ButtonWrapper };
