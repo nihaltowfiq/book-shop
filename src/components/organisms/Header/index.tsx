@@ -1,9 +1,11 @@
+import { Button } from 'components/atoms';
 import { FC } from 'react';
 import { Container } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Header: FC<PropsType> = ({ isNav }) => {
+	const history = useHistory();
 	return (
 		<Container>
 			<NavBar>
@@ -21,7 +23,13 @@ export const Header: FC<PropsType> = ({ isNav }) => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/something">Something</NavLink>
+							<Button
+								className="py-1"
+								style={{ minWidth: '70px' }}
+								onClick={() => history.push('/login')}
+							>
+								Login
+							</Button>
 						</li>
 					</Navigation>
 				)}
@@ -39,7 +47,7 @@ const NavBar = styled.nav`
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-	padding: 1rem 0;
+	padding: 0.813rem 0;
 `;
 
 const Navigation = styled.ul`
