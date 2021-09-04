@@ -7,7 +7,7 @@ export const Books: FC = () => {
 	return (
 		<Row>
 			{booksData.map((el, i) => (
-				<Col key={i} md={4}>
+				<Col key={i} lg={4} md={6}>
 					<SingleBook data={el} />
 				</Col>
 			))}

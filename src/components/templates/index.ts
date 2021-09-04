@@ -1,3 +1,4 @@
+export * from './BookDetails';
 export * from './Home';
 export * from './Layouts';
 export * from './Login';

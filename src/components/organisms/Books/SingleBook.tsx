@@ -1,10 +1,13 @@
 import { Button, Card, Image } from 'components/atoms';
 import { booksData } from 'libs/database';
 import { FC } from 'react';
+import { useHistory } from 'react-router';
 import styled from 'styled-components';
 
 export const SingleBook: FC<PropsType> = ({ data }) => {
-	const { name, author, image, price } = data;
+	const history = useHistory();
+	const { id, name, author, image, price } = data;
+
 	return (
 		<Wrapper>
 			<div className="ImageArea">
@@ -14,7 +17,7 @@ export const SingleBook: FC<PropsType> = ({ data }) => {
 			<p>{author}</p>
 			<div className="Action">
 				<h3>${price}</h3>
-				<Button>But Now</Button>
+				<Button onClick={() => history.push(`/book/${id}`)}>Buy Now</Button>
 			</div>
 		</Wrapper>
 	);
