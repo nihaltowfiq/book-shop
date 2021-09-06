@@ -1,6 +1,6 @@
 import { FC, SVGAttributes } from 'react';
 
-const Icon: FC<IconProps> = ({ path, fill, ...rest }): JSX.Element => {
+const Icon: FC<IconProps> = ({ path, fill, ...rest }) => {
 	return (
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...rest}>
 			<path d={path} fill={fill} />
