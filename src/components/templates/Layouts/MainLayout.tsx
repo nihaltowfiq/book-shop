@@ -8,7 +8,7 @@ export const MainLayout: FC<PropsType> = ({ isNav, isFooter, children }) => {
 			<header>
 				<Header isNav={isNav} />
 			</header>
-			<main style={{ minHeight: 'calc((100vh - 60px) - 88px)' }}>
+			<main style={{ minHeight: 'calc(100vh - 148px)' }}>
 				<Container>{children}</Container>
 			</main>
 			<Footer show={isFooter} />

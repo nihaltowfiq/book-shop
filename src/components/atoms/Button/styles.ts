@@ -21,20 +21,21 @@ export const ButtonWrapper = styled.button<ButtonProps>`
 	}};
 
 	${({ variant }) => {
-		return css`
-			color: var(--white);
-			border-color: ${getThemeColor(variant)};
-			background-color: ${getThemeColor(variant)};
+		switch (variant) {
+			case 'light':
+				return css`
+					color: var(--dark);
+					border-color: ${getThemeColor(variant)};
+					background-color: ${getThemeColor(variant)};
+				`;
 
-			&:hover {
-				opacity: 0.95;
-			}
-			&:focus {
-				outline: none;
-				border-color: ${getThemeColor(variant)};
-				box-shadow: 0 0 0 0.2rem rgba(105, 70, 244, 0.25);
-			}
-		`;
+			default:
+				return css`
+					color: var(--white);
+					border-color: ${getThemeColor(variant)};
+					background-color: ${getThemeColor(variant)};
+				`;
+		}
 	}}
 
 	border-radius: ${({ pill }) => (pill ? '50rem' : '0.25rem')};

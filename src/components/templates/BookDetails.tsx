@@ -5,8 +5,8 @@ import { useParams } from 'react-router';
 import { MainLayout } from '.';
 
 export const BookDetails: FC = () => {
-	const { bookID } = useParams<{ bookID: string }>();
-	const data = booksData.find(({ id }) => id === parseInt(bookID));
+	const { bookId } = useParams<{ bookId: string }>();
+	const data = booksData.find(({ id }) => id === parseInt(bookId));
 
 	if (data) {
 		return (
@@ -19,7 +19,7 @@ export const BookDetails: FC = () => {
 	return (
 		<MainLayout>
 			<div>
-				<h5 className="mt-5 text-center text-warning">Data not found</h5>
+				<h5 className="pt-5 text-center text-warning">Data not found</h5>
 			</div>
 		</MainLayout>
 	);
