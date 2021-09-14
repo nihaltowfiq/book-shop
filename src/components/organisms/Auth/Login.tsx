@@ -1,13 +1,13 @@
 import { Button } from 'components/atoms';
 import { BorderlessInput } from 'components/molecules';
-import { FC } from 'react';
+import { FC, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Login: FC = () => {
+export const Login: FC<PropsType> = ({ onLogin }) => {
 	return (
 		<AuthWrapper>
-			<AuthForm>
+			<AuthForm onSubmit={onLogin}>
 				<h5 className="Title">Login</h5>
 				<BorderlessInput srOnly placeholder="Username or Email" />
 				<BorderlessInput srOnly placeholder="Password" />
@@ -25,6 +25,10 @@ export const Login: FC = () => {
 		</AuthWrapper>
 	);
 };
+
+interface PropsType {
+	onLogin: (e: FormEvent) => void;
+}
 
 export const AuthWrapper = styled.div`
 	min-height: calc(100vh - 60px - 88px);
